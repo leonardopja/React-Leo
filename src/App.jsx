@@ -43,6 +43,16 @@ function SelfClosingTagExample() {
   )
 }
 
+function ComponentComposition() {
+  return (
+    <div className="nested-container">
+      <div className="nested-box">Box 1</div>
+      <div className="nested-box">Box 2</div>
+      <div className="nested-box">Box 3</div>
+    </div>
+  )
+}
+
 function App() {
   return (
     <div className="app-container">
@@ -75,6 +85,13 @@ function App() {
           <p>
             This paragraph is rendered to the DOM as part of this React component.
           </p>
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>5. Define an HTML Class in JSX</h2>
+        <div className="example-card">
+          <p className="highlight">This text uses a CSS class applied with className.</p>
         </div>
       </section>
     </div>
