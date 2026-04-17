@@ -62,6 +62,15 @@ function GreetingCard({ name, title }) {
   )
 }
 
+function NestedComponents() {
+  return (
+    <div>
+      <GreetingCard name="Alice" title="You are learning React!" />
+      <GreetingCard name="Bruno" title="Composing components is easy." />
+    </div>
+  )
+}
+
 function App() {
   return (
     <div className="app-container">
@@ -108,6 +117,16 @@ function App() {
         <h2>6. Learn About Self-Closing JSX Tags</h2>
         <div className="example-card">
           <SelfClosingTagExample />
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>7. Create a Stateless Functional Component</h2>
+        <div className="example-card">
+          <GreetingCard
+            name="Carol"
+            title="This is a stateless functional component."
+          />
         </div>
       </section>
     </div>
