@@ -8,6 +8,19 @@ function JSXElement() {
   )
 }
 
+function ComplexJSXElement() {
+  return (
+    <section>
+      <h3>Complex example</h3>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </section>
+  )
+}
+
 function App() {
   return (
     <div className="app-container">
@@ -17,6 +30,13 @@ function App() {
         <h2>1. Create a Simple JSX Element</h2>
         <div className="example-card">
           <JSXElement />
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>2. Create a Complex JSX Element</h2>
+        <div className="example-card">
+          <ComplexJSXElement />
         </div>
       </section>
     </div>
