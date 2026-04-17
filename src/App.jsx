@@ -21,6 +21,15 @@ function ComplexJSXElement() {
   )
 }
 
+function CommentExample() {
+  return (
+    <div>
+      {/* This comment is inside JSX */}
+      <p>JSX comments use curly braces and slash syntax.</p>
+    </div>
+  )
+}
+
 function App() {
   return (
     <div className="app-container">
@@ -37,6 +46,13 @@ function App() {
         <h2>2. Create a Complex JSX Element</h2>
         <div className="example-card">
           <ComplexJSXElement />
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>3. Add Comments in JSX</h2>
+        <div className="example-card">
+          <CommentExample />
         </div>
       </section>
     </div>
