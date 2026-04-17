@@ -53,6 +53,15 @@ function ComponentComposition() {
   )
 }
 
+function GreetingCard({ name, title }) {
+  return (
+    <div className="greeting-card">
+      <h3 className="greeting-title">Hello, {name}!</h3>
+      <p>{title}</p>
+    </div>
+  )
+}
+
 function App() {
   return (
     <div className="app-container">
@@ -92,6 +101,13 @@ function App() {
         <h2>5. Define an HTML Class in JSX</h2>
         <div className="example-card">
           <p className="highlight">This text uses a CSS class applied with className.</p>
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>6. Learn About Self-Closing JSX Tags</h2>
+        <div className="example-card">
+          <SelfClosingTagExample />
         </div>
       </section>
     </div>
