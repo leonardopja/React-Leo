@@ -30,6 +30,19 @@ function CommentExample() {
   )
 }
 
+function SelfClosingTagExample() {
+  return (
+    <div>
+      <img
+        src="https://via.placeholder.com/320x120"
+        alt="Self-closing tag example"
+      />
+      <br />
+      <input placeholder="Type something..." />
+    </div>
+  )
+}
+
 function App() {
   return (
     <div className="app-container">
@@ -53,6 +66,15 @@ function App() {
         <h2>3. Add Comments in JSX</h2>
         <div className="example-card">
           <CommentExample />
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>4. Render HTML Elements to the DOM</h2>
+        <div className="example-card">
+          <p>
+            This paragraph is rendered to the DOM as part of this React component.
+          </p>
         </div>
       </section>
     </div>
