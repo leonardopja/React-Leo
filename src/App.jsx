@@ -74,7 +74,7 @@ function NestedComponents() {
 function App() {
   return (
     <div className="app-container">
-      <h1>React: Learning JSX</h1>
+      <h1>React: 10 steps implemented</h1>
 
       <section className="section">
         <h2>1. Create a Simple JSX Element</h2>
@@ -129,6 +129,31 @@ function App() {
           />
         </div>
       </section>
+
+      <section className="section">
+        <h2>8. Create a React Component</h2>
+        <div className="example-card">
+          <p>The <strong>GreetingCard</strong> component above is a reusable React component.</p>
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>9. Create a Component with Composition</h2>
+        <div className="example-card">
+          <ComponentComposition />
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>10. Use React to Render Nested Components</h2>
+        <div className="example-card">
+          <NestedComponents />
+        </div>
+      </section>
+
+      <div className="footer">
+        <p>Use <code>npm install</code> and <code>npm run dev</code> to run.</p>
+      </div>
     </div>
   )
 }
